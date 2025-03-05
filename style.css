@@ -8,7 +8,7 @@ body {
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
-  box-sizing: border-box; /* Добавляем для правильного расчета высоты */
+  box-sizing: border-box;
 }
 
 #background {
@@ -33,7 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 5vh;
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  flex-wrap: wrap;
 }
 
 .gif-container {
@@ -63,9 +63,9 @@ body {
 }
 
 #bottom-gif-container {
-  width: 350px; /* Увеличенный размер гифки */
-  height: 350px; /* Увеличенный размер гифки */
-  margin-top: 20px; /* Добавим отступ сверху */
+  width: 350px;
+  height: 350px;
+  margin-top: 20px;
 }
 
 #bottom-gif-container img {
@@ -89,5 +89,9 @@ body {
 
   .main-overlay {
     font-size: 3em;
+  }
+  #bottom-gif-container {
+    width: 250px;
+    height: 250px;
   }
 }
