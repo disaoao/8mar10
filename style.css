@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  box-sizing: border-box; /* Добавляем для правильного расчета высоты */
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.main-overlay {
+  font-size: 4em;
+  -webkit-text-stroke: 2px black;
+  text-stroke: 2px black;
+  margin-top: 5vh;
+}
+
+.poem-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.gif-container {
+  width: 250px;
+  height: 250px;
+  margin: 0 10px;
+}
+
+.gif-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.poem-overlay {
+  font-size: 2.5em;
+  white-space: pre-line;
+  width: 50%;
+  text-align: center;
+}
+
+.personal-message {
+  font-size: 1.5em;
+  margin-top: 5vh;
+  width: 80%;
+  margin-bottom: 5vh;
+}
+
+#bottom-gif-container {
+  width: 350px; /* Увеличенный размер гифки */
+  height: 350px; /* Увеличенный размер гифки */
+  margin-top: 20px; /* Добавим отступ сверху */
+}
+
+#bottom-gif-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Media query для адаптивности */
+@media (max-width: 768px) {
+  .poem-overlay {
+    width: 100%;
+    font-size: 2em;
+  }
+
+  .gif-container {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+  }
+
+  .main-overlay {
+    font-size: 3em;
+  }
+}
